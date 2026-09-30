@@ -9928,7 +9928,9 @@ code {
 /* small desktop / pad landscape: follow vw like .banner-sTit (3vw) */
 @media screen and (max-width:1399px) {
     .banner-sTit .SEO {
-        line-height: 1.15
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
     }
 
     .banner-sTit .SEO span {
