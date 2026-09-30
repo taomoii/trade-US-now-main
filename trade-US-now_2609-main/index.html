@@ -73,7 +73,7 @@
 
     <link rel="stylesheet" type="text/css" href="https://event.kgi.com.tw/news/event/commonResources/css/slick.css" />
     <link href="https://event.kgi.com.tw/news/event/commonResources/css/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=20260930_23" />
+    <link rel="stylesheet" href="css/style.css?v=20260930_2" />
 
     <script src="https://event.kgi.com.tw/news/event/commonResources/js/vue-v3.js"></script>
     <script src="https://event.kgi.com.tw/news/event/commonResources/js/jquery-v3.4.min.js"></script>
@@ -254,15 +254,14 @@
                     <!-- 桌機版 -->
                     <div class="adBanner2 adBanner2-grid" v-if="windowWidth > 767">
                         <div class="adBanner2-img">
-                            <a href="https://chatservice.kgi.com.tw/Webhook/?q=我想了解台美股優惠" target="_blank"
-                                title="了解台美股優惠">
-                                <img src="images/adBanner_1.png?v=260721" alt="美股驚喜價">
+                            <a href="https://chatservice.kgi.com.tw/Webhook/?q=我想了解美股優惠" target="_blank" title="了解美股優惠">
+                                <img src="images/adBanner_1.png?v=260930" alt="美股驚喜價">
                             </a>
                         </div>
                         <div class="adBanner2-img">
-                            <a href="https://chatservice.kgi.com.tw/Webhook/?q=我想了解台美股優惠" target="_blank"
+                            <a href="https://chatservice.kgi.com.tw/Webhook/?q=我想了解美股優惠" target="_blank"
                                 title="了解台美股優惠">
-                                <img src="images/adBanner_5.png?v=260721" alt="台股回饋價">
+                                <img src="images/adBanner_5.png?v=260930" alt="定期定額均一價">
                             </a>
                         </div>
                         <!--div class="adBanner2-img">
@@ -287,17 +286,17 @@
                         @lazyLoaded="handleLazyLoaded" @lazyLoadError="handleLazeLoadError">
                         <div>
                             <div class="adBanner2-img">
-                                <a href="https://chatservice.kgi.com.tw/Webhook/?q=我想了解台美股優惠" target="_blank"
-                                    title="了解台美股優惠">
-                                    <img src="images/adBanner_1.png?v=260721" alt="美股驚喜價">
+                                <a href="https://chatservice.kgi.com.tw/Webhook/?q=我想了解美股優惠" target="_blank"
+                                    title="了解美股優惠">
+                                    <img src="images/adBanner_1.png?v=260930" alt="美股驚喜價">
                                 </a>
                             </div>
                         </div>
                         <div>
                             <div class="adBanner2-img">
-                                <a href="https://chatservice.kgi.com.tw/Webhook/?q=我想了解台美股優惠" target="_blank"
-                                    title="了解台美股優惠">
-                                    <img src="images/adBanner_5.png?v=260721" alt="台股回饋價">
+                                <a href="https://chatservice.kgi.com.tw/Webhook/?q=我想了解美股優惠" target="_blank"
+                                    title="了解美股優惠">
+                                    <img src="images/adBanner_5.png?v=260930" alt="定期定額均一價">
                                 </a>
                             </div>
                         </div>
@@ -339,10 +338,10 @@
                     </div>
                     <div class="btnArea twoBtn margin-top-40 margin-top-sm-10">
                         <div class="btn blue">
-                            <a href="https://chatservice.kgi.com.tw/Webhook/?q=我想了解台美股優惠" target="_blank"
-                                title="了解台美股優惠" id="ServiceBtn_S">
-                                <!-- <a href="javascript:void(0)" title="了解台美股優惠" @click="scrollToElement('eventInfo'); eventInfo = true;"> -->
-                                <b>了解台美股優惠</b><span class="material-symbols-outlined">keyboard_arrow_right</span>
+                            <a href="https://chatservice.kgi.com.tw/Webhook/?q=我想了解美股優惠" target="_blank" title="了解美股優惠"
+                                id="ServiceBtn_S">
+                                <!-- <a href="javascript:void(0)" title="了解美股優惠" @click="scrollToElement('eventInfo'); eventInfo = true;"> -->
+                                <b>了解美股優惠</b><span class="material-symbols-outlined">keyboard_arrow_right</span>
                             </a>
                         </div>
                         <div class="btn blue">
@@ -823,14 +822,22 @@
                     </p>
 
                     <ul class="tab type2 function-showcase-tabs" role="tablist" data-aos="fade-up">
-                        <li :class="{'active': functionTabIndex === 0}" :aria-selected="functionTabIndex === 0" role="tab"
-                            @click="functionTabIndex = 0; $event.target.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'})">價格即時到位</li>
-                        <li :class="{'active': functionTabIndex === 1}" :aria-selected="functionTabIndex === 1" role="tab"
-                            @click="functionTabIndex = 1; $event.target.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'})">市場資訊整合</li>
-                        <li :class="{'active': functionTabIndex === 2}" :aria-selected="functionTabIndex === 2" role="tab"
-                            @click="functionTabIndex = 2; $event.target.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'})">企業體質</li>
-                        <li :class="{'active': functionTabIndex === 3}" :aria-selected="functionTabIndex === 3" role="tab"
-                            @click="functionTabIndex = 3; $event.target.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'})">策略選股</li>
+                        <li :class="{'active': functionTabIndex === 0}" :aria-selected="functionTabIndex === 0"
+                            role="tab"
+                            @click="functionTabIndex = 0; $event.target.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'})">
+                            價格即時到位</li>
+                        <li :class="{'active': functionTabIndex === 1}" :aria-selected="functionTabIndex === 1"
+                            role="tab"
+                            @click="functionTabIndex = 1; $event.target.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'})">
+                            市場資訊整合</li>
+                        <li :class="{'active': functionTabIndex === 2}" :aria-selected="functionTabIndex === 2"
+                            role="tab"
+                            @click="functionTabIndex = 2; $event.target.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'})">
+                            企業體質</li>
+                        <li :class="{'active': functionTabIndex === 3}" :aria-selected="functionTabIndex === 3"
+                            role="tab"
+                            @click="functionTabIndex = 3; $event.target.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'})">
+                            策略選股</li>
                     </ul>
 
                     <transition name="function-panel" mode="out-in">

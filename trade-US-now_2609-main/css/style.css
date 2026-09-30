@@ -9898,7 +9898,7 @@ code {
 }
 
 .banner-sTit .SEO {
-    margin: 0;
+    margin: 16px 0 0;
     padding: 0;
     line-height: 0.5
 }
@@ -9917,6 +9917,7 @@ code {
 /* the comma span must not inherit the decorative span padding */
 .banner-sTit .SEO .SEO-comma {
     padding: 0;
+    color: inherit !important;
 }
 
 /* ---- KV responsive scale (subtitle + CTA) ----
@@ -9969,6 +9970,10 @@ code {
 
 /* mobile: subtitle on two lines, compact centered CTA */
 @media screen and (max-width:767px) {
+    .banner-sTit .SEO {
+        margin-top: 10px;
+    }
+
     .banner-sTit .SEO span {
         font-size: 7vw;
         padding: 2px 4px;
